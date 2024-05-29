@@ -1,0 +1,14 @@
+langchain
+bitsandbytes 
+accelerate 
+xformers 
+einops
+datasets 
+loralib 
+sentencepiece
+pypdf
+chromadb
+sentence_transformers
+tiktoken
+langchain-community
+faiss-cpu
