@@ -7,16 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1b3I41Wrgs1tK5FW1nSdlhg2Evdw9XsH1
 """
 
-!pip -q install langchain
-!pip -q install bitsandbytes accelerate xformers einops
-!pip -q install datasets loralib sentencepiece
-!pip -q install pypdf
-!pip install chromadb
-!pip install -q sentence_transformers
-!pip install tiktoken
-!pip install -U langchain-community
 
-pip install -U langchain-community
 
 from langchain.document_loaders import PyPDFLoader
 from langchain.document_loaders import TextLoader
@@ -53,7 +44,6 @@ for file in os.listdir("docs"):
     loader=TextLoader(text_path)
     document.extend(loader.load())
 
-!pip install faiss-cpu
 import faiss
 
 # Uses Sentence Transformers Directly
